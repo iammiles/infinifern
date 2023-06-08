@@ -31,9 +31,7 @@
 
 (defn draw
   [init-x init-y]
-  (let [rand-num (rand)
-        canvas (.getElementById js/document "infinifern-canvas")
-        ctx (.getContext canvas "2d")]
+  (let [rand-num (rand)]
     (let [coords
           (cond
             (<= rand-num 0.01) (f1 init-x init-y)
