@@ -14,7 +14,7 @@
   "Successively smaller leaflets. Call 85% of time"
   [x y]
   {:x (+ (* 0.85 x) (* 0.04 y))
-   :y (+ (* -0.4 x) (+ 1.6 (* 0.85 y)))})
+   :y (+ (* -0.04 x) (+ 1.6 (* 0.85 y)))})
 
 (defn f3
   "Largest left-hand leaflet. Call 7% of time"
@@ -53,4 +53,4 @@
       )))
 
 
-; (js/window.requestAnimationFrame (fn [] (draw 0 0 )))
+(js/window.requestAnimationFrame (fn [] (draw 0 0 )))
