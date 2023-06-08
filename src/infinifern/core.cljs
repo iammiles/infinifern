@@ -1,6 +1,5 @@
 (ns infinifern.core)
 
-
 (def canvas (.getElementById js/document "infinifern-canvas"))
 (def ctx (.getContext canvas "2d"))
 
@@ -28,7 +27,6 @@
   {:x (+ (* -0.15 x) (* 0.28 y))
    :y (+ (* 0.26 x) (+ 0.44 (* 0.24 y)))})
 
-
 (defn draw
   [init-x init-y]
   (let [rand-num (rand)]
@@ -42,13 +40,11 @@
       (set! (.-fillStyle ctx) "lightgreen")
       (.fillRect ctx
                  (+ (* 100 (:x coords)) (/ (.-width canvas) 2))
-                 (- (.-height canvas) (* (:y coords) 70) )
+                 (- (.-height canvas) (* (:y coords) 70))
                  1
                  1)
 
       (js/window.requestAnimationFrame (fn [] (draw (:x coords)
-                                                   (:y coords))))
-      )))
+                                                    (:y coords)))))))
 
-
-(js/window.requestAnimationFrame (fn [] (draw 0 0 )))
+(js/window.requestAnimationFrame (fn [] (draw 0 0)))
