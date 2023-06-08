@@ -1,3 +1,13 @@
-body {
-    color: red;
+canvas {
+    border: 1px solid black;
+}
+
+
+#infinifern-canvas {
+    background-color: #070400;
+    border: 1px solid green;
+    border-radius: 4px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
