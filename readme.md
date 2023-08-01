@@ -1,5 +1,5 @@
 # Infinifern
-Presently this is a CLJS adaption of the HTML5 Canvas example of a [Barnsley fern](https://en.wikipedia.org/wiki/Barnsley_fern)
+A CLJS adaption of the HTML5 Canvas example of a [Barnsley fern](https://en.wikipedia.org/wiki/Barnsley_fern)
 
 
 ## Get running
